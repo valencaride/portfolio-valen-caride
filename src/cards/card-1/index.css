@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  /* background-color: #000; */
+  color:white
+  }
+  body{
+background-color: #000;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  a{
+    text-decoration: none;
+ 
+  }
+  .sec-first{
+    width: 100%;
+    height: 100vh;
+    padding: 0 7%;
+   
+  }
+  .sec-first-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    height: 100%;
+  }
+  .container-detail{
+    color: white;
+  }
+  .sec-first-container .container-detail{
+    position: relative;
+    min-height: 50%;
+    width: 60%;
+    padding: 20px;
+    padding-left: 10%;
+    align-self: center;
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+  .title-h1{
+    color: white;
+  }
+  .sec-first-container .container-detail h1{
+    font-size: 42px;
+    margin-bottom: 32px;
+  
+  }
+  .sec-first-container .container-detail p{
+  
+    line-height: 30px;
+  }
+
+  .sec-first-container .img-detail {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+}
+
+.sec-first-container img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+}
+
+/* Estilos adicionales para la imagen de fondo */
+.sec-first-container .img-detail .img-back {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80%;
+    /* Ajusta la imagen de fondo según tus necesidades */
+}
+
+/* Aumenta el tamaño de la imagen */
+.sec-first-container .img-detail img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+    max-width: none; /* Desactiva el máximo ancho de la imagen */
+    max-height: none; /* Desactiva la altura máxima de la imagen */
+}
+
+ 
+  .sec-second .container-detail{
+    position: relative;
+    min-height: 50%;
+    width: 50%;
+    padding: 20px 0 20px 7%;
+    align-self: center;
+    opacity: 0.7;
+    z-index: 1;
+  }
+  .sec-second .container-detail h1{
+    font-size: 42px;
+    margin-bottom: 32px;
+    
+  
+  }
+  .sec-second .container-detail p{
+   
+    margin-bottom: 32px;
+    line-height: 28px;
+  }
+
+.sec-vid {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 90vh; /* Ajusta la altura del contenedor al 100% del viewport */
+}
+
+.sec-vid iframe {
+    max-width: 80%; /* Establece un ancho máximo del 80% del contenedor padre */
+    width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor padre */
+    height: 100%; /* Establece la altura automáticamente según el ancho para mantener la proporción */
+    max-height: 60vh; /* Establece una altura máxima del 60% del viewport */
+    margin: 0 auto; /* Centra horizontalmente el iframe */
+    display: block; /* Asegura que el iframe se muestre como un bloque */
+}
+
+
+  
+  .sec-third{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* padding: 100px 7%; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+  }
+  
+  
+  
+  @media (max-width: 800px)
+  {
+    .sec-first{
+      height: auto;
+      min-height: 100vh;
+      margin: 100px 0;
+    }
+    .sec-first-container .img-detail{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 100px;
+    }
+    .sec-first-container img{
+      position: absolute;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%,50%);
+      width: 32vw;
+    }
+    .sec-first-container .container-detail{
+      width: 100%;
+    }
+    .sec-first-container .container-detail span{
+      width: 10%;
+    }
+    iframe{
+    margin: 2%;
+    }
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -16,6 +16,12 @@
     list-style: none;
     box-sizing: border-box;
 }
+.active {
+    cursor: default; /* Quita el cursor */
+}
+a {
+    text-decoration: none; /* Quita el subrayado */
+}
 
 body { font-family:Arial, Helvetica, sans-serif }
     nav { 
