@@ -201,7 +201,7 @@ select { /* 1 */
    -moz-appearance: button;
    appearance: button;
  }
- 
+
 
 /**
  * Remove the inner border and padding in Firefox.
