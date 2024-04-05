@@ -1,4 +1,7 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Aquí tienes tu archivo CSS con las correcciones sugeridas:
+
+```css */
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -8,7 +11,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -192,15 +195,15 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
- button,
- [type="button"],
- [type="reset"],
- [type="submit"] {
-   /* Propiedad no estándar con prefijo de vendedor para compatibilidad */
-   -webkit-appearance: button;
-   -moz-appearance: button;
-   appearance: button;
- }
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /* Propiedad no estándar con prefijo de vendedor para compatibilidad */
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
 
 
 /**
@@ -291,7 +294,9 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
- [type="search"] {
+[type
+
+="search"] {
   /* Estilo alternativo para el campo de búsqueda */
   background-color: #fff;
   border: 1px solid #ccc;
@@ -357,3 +362,17 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Video
+   ========================================================================== */
+
+video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+}
+
+
+/* Este archivo CSS incluye todas las reglas originales de "normalize.css" junto con las correcciones específicas para el video, como ajustes de tamaño, posición y estilo. Asegúrate de enlazar este archivo CSS en tu documento HTML para aplicar los estilos correctamente. */
