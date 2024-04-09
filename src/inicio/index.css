@@ -1,11 +1,18 @@
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+}
+
 .container {
     margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 0.8em;
 }
-a {
-    text-decoration: none; /* Quita el subrayado */
+
+.no-underline a {
+    text-decoration: none;
+    /* Quita el subrayado */
 }
 
 .item {
@@ -29,22 +36,30 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Color del fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color del fondo semi-transparente */
     color: white;
-    opacity: 0; /* Oculta el overlay inicialmente */
-    transition: opacity 0.3s ease; /* Transición suave para mostrar el overlay */
+    opacity: 0;
+    /* Oculta el overlay inicialmente */
+    transition: opacity 0.3s ease;
+    /* Transición suave para mostrar el overlay */
 }
 
 .item:hover .overlay {
-    opacity: 1; /* Muestra el overlay al pasar el ratón sobre el elemento */
+    opacity: 1;
+    /* Muestra el overlay al pasar el ratón sobre el elemento */
 }
 
 .overlay h2 {
     margin-bottom: 1rem;
+    font-size: medium;
+    font-weight: bold;
 }
+
 @media only screen and (max-width: 768px) {
     .overlay h2 {
         text-align: center;
+        font-size: medium;
     }
 }
 
@@ -53,7 +68,8 @@ a {
     bottom: 0.5rem;
     left: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #ffffff00; /* Color de fondo semi-transparente para el botón */
+    background-color: #ffffff00;
+    /* Color de fondo semi-transparente para el botón */
     border: solid;
     color: white;
     cursor: pointer;
