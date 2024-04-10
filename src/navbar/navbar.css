@@ -24,7 +24,12 @@
 
 a {
     text-decoration: none;
+    color: white;
     /* Quita el subrayado */
+}
+
+.logo:hover{
+    background-color: #151616;
 }
 
 
