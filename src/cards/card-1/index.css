@@ -116,6 +116,9 @@ a {
   .descripcion.mostrar {
     max-height: 900px; /* Altura máxima para mostrar todo el contenido */
   }
+  .contenedor{
+    margin-bottom: 4%;
+  }
 }
 .descripcion {
   overflow: hidden;
