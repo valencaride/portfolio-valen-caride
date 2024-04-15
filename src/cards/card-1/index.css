@@ -33,14 +33,17 @@ a {
 }
 
 .title-h1 {
-  font-size: x-large;
+  font-size: xx-large;
   text-align: center;
   margin-bottom: 14px;
+  font-weight: bold;
 
 }
 
 .centered {
   text-align: center;
+  /* margin: 4%; */
+  font-size: large;
   /* Alinea el texto en el centro */
 }
 
@@ -66,23 +69,19 @@ a {
   /* Centra horizontalmente el contenido */
   align-items: center;
   /* Centra verticalmente el contenido */
-  height: 90vh;
+  /* height: 63vh; */
   /* Ajusta la altura del contenedor al 100% del viewport */
 }
 
 .sec-vid iframe {
-  max-width: 80%;
-  /* Establece un ancho máximo del 80% del contenedor padre */
+  max-width: 100%; /* Cambiado de 80% a 100% para ocupar todo el ancho disponible */
   width: 100%;
-  /* Ajusta el ancho del iframe al 100% del contenedor padre */
-  height: 90%;
-  /* Establece la altura automáticamente según el ancho para mantener la proporción */
-  max-height: 60vh;
-  /* Establece una altura máxima del 60% del viewport */
+  height: auto; /* Cambiado de 90% a auto para mantener la proporción */
+  max-height: 60vh; /* Establece una altura máxima del 50% del viewport */
   margin: 0 auto;
-  /* Centra horizontalmente el iframe */
+  margin-top: 58px;
+  height: 60vh;
   display: block;
-  /* Asegura que el iframe se muestre como un bloque */
 }
 
 
@@ -100,8 +99,41 @@ a {
 
 
 @media (max-width: 800px) {
-
-  iframe {
-    margin: 2%;
+  .sec-vid iframe{
+    width: 80%; /* Cambia el ancho según lo necesites */
+    margin: 0 auto; /* Centra el iframe horizontalmente */
   }
+  .sec-vid{
+    height: 30vh;
+  }
+  .title-h1{
+    font-size: x-large;
+  }
+  .descriptions{
+    font-size: large;
+    margin: 3%;
+  }
+  .descripcion.mostrar {
+    max-height: 900px; /* Altura máxima para mostrar todo el contenido */
+  }
+}
+.descripcion {
+  overflow: hidden;
+  max-height: 3em; /* Ajusta la altura deseada */
+  transition: max-height 0.5s ease; /* Agrega una transición suave */
+}
+
+.descripcion.mostrar {
+  max-height: 9999px; /* Altura máxima para mostrar todo el contenido */
+  margin-bottom: 20px; /* Agrega margen inferior cuando está expandido */
+}
+
+.centered {
+  margin-bottom: 30px; /* Agrega el margen inferior deseado */
+}
+.ver-mas{
+  margin-top: 2%;
+ background-color: inherit;
+ cursor: pointer;
+ color: blue;
 }

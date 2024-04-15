@@ -2,7 +2,7 @@
 	
 }
 */
-.l_body {
+.el_body {
 	margin: 4%;
     margin-top: -15px;
     box-sizing: border-box;
@@ -106,11 +106,4 @@
 @media screen and (max-width: 800px) {
 	
 
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
 }
