@@ -61,6 +61,15 @@ body {
         text-align: center;
         font-size: medium;
     }
+    .container {
+        display: block; /* Cambia el diseño a bloque para mostrar las imágenes en una sola columna */
+    }
+
+    .item {
+        flex: none; /* Quita la propiedad flex para que las imágenes no se expandan */
+        width: 90%; /* Establece el ancho al 100% para ocupar toda la anchura disponible */
+        margin: 0 auto 1em; /* Añade un margen inferior para separar las imágenes */
+    }
 }
 
 .overlay button {
