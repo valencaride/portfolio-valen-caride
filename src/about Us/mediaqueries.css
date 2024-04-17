@@ -38,9 +38,9 @@
       margin: 0 5%;
     }
     .section__pic-container {
-      width: 275px;
+      width: 200px;
       height: 275px;
-      margin: 0 auto 4rem;
+      /* margin: 0 auto 4rem; */
     }
     .about-containers {
       margin-top: 0;
@@ -99,6 +99,9 @@
       font-size: 3rem;
     }
     .text-container {
-      text-align: justify;
+      text-align: justify; 
+    }
+    .text-about{
+      font-size: xx-large
     }
   }
