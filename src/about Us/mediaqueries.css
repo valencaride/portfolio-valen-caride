@@ -1,3 +1,10 @@
+
+.text-about{
+  font-size: x-large;
+}
+#about{
+  margin-bottom: 10%;
+}
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
@@ -104,4 +111,5 @@
     .text-about{
       font-size: xx-large
     }
+    
   }

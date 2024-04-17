@@ -1,24 +1,21 @@
-@charset "UTF-8";
+
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 .sexy-preview-load {
-  position: fixed;
+
   text-align: center;
   top: 0;
-  bottom: 0;
+  bottom: -10%;
   left: 0;
   right: 0;
   font-size: 100%;
   color: #f7f7f7;
-  overflow: hidden;
+height: 87vh;
   background: url(https://unsplash.imgix.net/uploads%2F14115409319165441c030%2Fa1d0230a?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=ceaf6a3ec69b55768d4546cb34f3fd7b);
-    -webkit-background-size: cover;
-  -moz-background-size: cover; 
-  -ms-background-size: cover;
-  -o-background-size: cover;
+   
   background-size: cover;
   background-position:center center;
-  background-attachment:fixed;
+
 }
 .sexy-preview-load:before {
   content: "";
