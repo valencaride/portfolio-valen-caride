@@ -61,6 +61,9 @@ body {
         text-align: center;
         font-size: medium;
     }
+    .overlay button {
+        font-size: large;
+    }
     .container {
         display: block; /* Cambia el diseño a bloque para mostrar las imágenes en una sola columna */
     }
@@ -78,8 +81,6 @@ body {
     left: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #ffffff00;
-    /* Color de fondo semi-transparente para el botón */
- 
-    color: blue;
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
