@@ -79,7 +79,7 @@ body {
     padding: 0.5rem 1rem;
     background-color: #ffffff00;
     /* Color de fondo semi-transparente para el botón */
-    border: solid;
-    color: white;
+ 
+    color: blue;
     cursor: pointer;
 }
