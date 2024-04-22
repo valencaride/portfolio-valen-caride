@@ -61,6 +61,9 @@ body {
         text-align: center;
         font-size: medium;
     }
+    main {
+        margin-bottom: 5%;
+    }
     .overlay button {
         font-size: large;
     }
