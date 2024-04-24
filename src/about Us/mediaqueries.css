@@ -56,12 +56,9 @@
   
   @media screen and (max-width: 600px) {
     #contact,
-    footer {
-      height: 40vh;
-    }
     #profile {
       align-items: center;
-      height: 84vh;
+      height: 64vh;
       margin-bottom: 0;
     }
     article {
@@ -87,7 +84,7 @@
       font-size: 1.25rem;
     }
     .logo {
-      font-size: 1.5rem;
+      font-size: 3rem;
     }
     .nav-links {
       flex-direction: column;
@@ -109,7 +106,11 @@
       text-align: justify; 
     }
     .text-about{
-      font-size: xx-large
+      font-size: large;
+      margin: 4%;
+    }
+    .name-about{
+      margin-top: 2%  ;
     }
     
   }
