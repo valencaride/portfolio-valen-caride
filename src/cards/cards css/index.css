@@ -119,6 +119,9 @@ a {
   .contenedor{
     margin-bottom: 4%;
   }
+  .centered{
+    margin: 2%;
+  }
 }
 .descripcion {
   overflow: hidden;

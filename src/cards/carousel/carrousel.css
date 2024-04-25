@@ -109,4 +109,11 @@
 		width: 10px;
 		height: 4px;
 	}
+	.carousel__anterior{
+		font-size: 20px;
+		color: white;
+	}
+	.carousel__siguiente{
+		font-size: 20px;
+	}
 }
