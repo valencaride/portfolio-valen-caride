@@ -20,3 +20,26 @@ var menu = document.querySelector("#menu");
 		}
 		x[slideIndex-1].style.display = "block";
 		}
+
+		function verMas() {
+            var descripcion = document.getElementById("descripcion");
+            var boton = document.getElementById("ver-mas-btn");
+            var textoCompleto = descripcion.getAttribute("data-texto-completo");
+
+            if (descripcion.classList.contains("mostrar")) {
+                descripcion.innerText = textoCompleto.substring(0, textoCompleto.length / 2) + "...";
+                descripcion.classList.remove("mostrar");
+                boton.innerText = "Ver más";
+            } else {
+                descripcion.innerText = textoCompleto;
+                descripcion.classList.add("mostrar");
+                boton.innerText = "Ver menos";
+            }
+        }
+
+        window.onload = function() {
+            var descripcion = document.getElementById("descripcion");
+            var textoCompleto = descripcion.innerText;
+            descripcion.setAttribute("data-texto-completo", textoCompleto);
+            descripcion.innerText = textoCompleto.substring(0, textoCompleto.length / 2) + "...";
+        }
