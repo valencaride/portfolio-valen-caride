@@ -11,135 +11,35 @@ body {
   background-color: #000;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-
-}
-
-.container-s-f {
-  display: flex;
-  /* Usa flexbox */
-  justify-content: center;
-  /* Centra horizontalmente */
-  align-items: center;
-  /* Centra verticalmente */
-  height: 40vh;
-  /* Altura del contenedor */
-  margin: 5%;
-}
-
-.title-h1 {
-  font-size: xx-large;
-  text-align: center;
-  margin-bottom: 14px;
-  font-weight: bold;
-
-}
-
-.centered {
-  text-align: center;
-  /* margin: 4%; */
-  font-size: large;
-  /* Alinea el texto en el centro */
-}
-
-.sec-second .container-detail {
-  position: relative;
-  min-height: 50%;
-  width: 50%;
-  padding: 20px 0 20px 7%;
-  align-self: center;
-  opacity: 0.7;
-  z-index: 1;
-}
-
-.sec-second .container-detail h1 {
-  font-size: 42px;
-
-}
-
-
-.sec-vid {
-  display: flex;
-  justify-content: center;
-  /* Centra horizontalmente el contenido */
-  align-items: center;
-  /* Centra verticalmente el contenido */
-  /* height: 63vh; */
-  /* Ajusta la altura del contenedor al 100% del viewport */
-}
-.sec-vid iframe {
-  max-width: 100%; /* Cambiado de 80% a 100% para ocupar todo el ancho disponible */
+.row {
   width: 100%;
-  height: auto; /* Cambiado de 90% a auto para mantener la proporción */
-  max-height: 60vh; /* Establece una altura máxima del 50% del viewport */
-  margin: 0 auto;
-  margin-top: 58px;
-  height: 60vh;
-  display: block;
+  margin-left: 1%;
 }
-.sec-third {
-  display: flex;
+
+iframe {
   width: 100%;
-  height: auto;
-  /* padding: 100px 7%; */
-  justify-content: space-around;
-  flex-wrap: wrap;
+  height: 50vh;
 }
-.redirect-ig{
-  color: blue;
-}
-.redirect-ig:hover{
-  cursor: pointer;
+
+.description {
+
+  text-align: center;
+  margin-top: 2%;
+
 }
 
 
 @media (max-width: 800px) {
-  .sec-vid iframe{
-    width: 80%; /* Cambia el ancho según lo necesites */
-    margin: 0 auto; /* Centra el iframe horizontalmente */
-  }
-  .sec-vid{
+  iframe {
+    width: 100%;
     height: 30vh;
   }
-  .title-h1{
-    font-size: x-large;
-  }
-  .descriptions{
-    font-size: large;
-    margin: 3%;
-  }
-  .descripcion.mostrar {
-    max-height: 900px; /* Altura máxima para mostrar todo el contenido */
-  }
-  .contenedor{
-    margin-bottom: 4%;
-  }
-  .centered{
-    margin: 2%;
-  }
-}
-.descripcion {
-  overflow: hidden;
-  max-height: 3em; /* Ajusta la altura deseada */
-  transition: max-height 0.5s ease; /* Agrega una transición suave */
-}
 
-.descripcion.mostrar {
-  max-height: 9999px; /* Altura máxima para mostrar todo el contenido */
-  margin-bottom: 20px; /* Agrega margen inferior cuando está expandido */
-}
+  .description {
+    margin-top: 4%;
+  }
 
-.centered {
-  margin-bottom: 30px; /* Agrega el margen inferior deseado */
-}
-.ver-mas{
-  margin-top: 2%;
- background-color: inherit;
- cursor: pointer;
- color: blue;
+  .video-container {
+    margin-top: 4%;
+  }
 }
