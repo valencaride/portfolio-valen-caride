@@ -17,11 +17,25 @@
             <p>Director</p>
             <a href="/src/inicio/inicio.html">EXPLORE</a>
         </div>
-        <video autoplay muted loop playsinline>
+        <!-- Añade el atributo 'playsinline' y 'muted' -->
+        <video autoplay muted loop playsinline id="backgroundVideo">
             <source src="/video/fondo.mp4" type="video/mp4">
         </video>
         <div class="capa"></div>
     </main>
+
+    <script>
+        // Detecta si es iOS
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        
+        // Si es iOS, añade un evento de clic al cuerpo para iniciar la reproducción del video
+        if (iOS) {
+            document.body.addEventListener('click', function() {
+                var video = document.getElementById('backgroundVideo');
+                video.play();
+            });
+        }
+    </script>
 </body>
 
 </html>
