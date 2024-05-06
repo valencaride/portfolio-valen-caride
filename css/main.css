@@ -88,14 +88,14 @@ video {
     object-fit: cover;
     z-index: -1; /* Ensure it's behind other content */
 }
-
 .capa {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #1c1c1d;
-    opacity:0.5;
+    opacity: 0.5;
     mix-blend-mode: overlay;
+    z-index: -1; /* Ensure it's behind other content */
 }
