@@ -42,9 +42,9 @@
             display: none;
         }
 
-        /* Oculta el video hasta que se cargue completamente */
+        /* Asegura que el video sea visible cuando se elimine la clase loaded */
         .loaded video {
-            display: none;
+            display: block;
         }
     </style>
 </head>
@@ -67,13 +67,15 @@
         <div class="capa"></div>
     </main> 
 
-    <script>
+    <!-- <script>
         // Espera 5 segundos antes de mostrar el video
         setTimeout(function() {
+            var loader = document.getElementById('loader');
             var principal = document.getElementById('principal');
+            loader.style.display = 'none';
             principal.classList.add('loaded');
         }, 5000);
-    </script>
+    </script> -->
 </body>
 <script src="/index.js"></script>
 </html>

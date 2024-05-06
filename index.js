@@ -22,3 +22,12 @@ if (isiOS) {
     // En otros dispositivos, inicia el video automáticamente
     startVideo();
 }
+//-----------------------------------------------------------------
+
+    // Espera 5 segundos antes de mostrar el video
+    setTimeout(function() {
+        var loader = document.getElementById('loader');
+        var principal = document.getElementById('principal');
+        loader.style.display = 'none';
+        principal.classList.add('loaded');
+    }, 3000);
