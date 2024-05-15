@@ -5,6 +5,7 @@ body {
 
 .container {
     margin-top: 2%;
+    margin-bottom: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 0.8em;
@@ -20,11 +21,7 @@ body {
     overflow: hidden;
 }
 
-.item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+
 
 .overlay {
     position: absolute;
@@ -56,33 +53,13 @@ body {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-    .overlay h2 {
-        text-align: center;
-        font-size: medium;
-    }
-    main {
-        margin-bottom: 5%;
-    }
-    .overlay button {
-        font-size: large;
-    }
-    .container {
-        display: block; /* Cambia el diseño a bloque para mostrar las imágenes en una sola columna */
-    }
 
-    .item {
-        flex: none; /* Quita la propiedad flex para que las imágenes no se expandan */
-        width: 90%; /* Establece el ancho al 100% para ocupar toda la anchura disponible */
-        margin: 0 auto 1em; /* Añade un margen inferior para separar las imágenes */
-    }
-}
 
 .overlay button {
     position: absolute;
     bottom: 0.5rem;
     left: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     background-color: #ffffff00;
     color: rgb(255, 255, 255);
     cursor: pointer;
