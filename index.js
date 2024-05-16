@@ -31,18 +31,20 @@
 //         loader.style.display = 'none';
 //         principal.classList.add('loaded');
 //     }, 3000);
-var video = document.getElementById('backgroundVideo');
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById('backgroundVideo');
+    
+    // Función para iniciar la reproducción del video
+    function startVideo() {
+        video.play().then(function() {
+            // Video iniciado
+            console.log('Video started playing');
+        }).catch(function(error) {
+            // Error al iniciar la reproducción del video
+            console.error('Video playback error:', error);
+        });
+    }
 
-// Función para iniciar la reproducción del video
-function startVideo() {
-    video.play().then(function() {
-        // Video iniciado
-        console.log('Video started playing');
-    }).catch(function(error) {
-        // Error al iniciar la reproducción del video
-        console.error('Video playback error:', error);
-    });
-}
-
-// Inicia el video automáticamente
-startVideo();
+    // Iniciar video automáticamente
+    startVideo();
+});
