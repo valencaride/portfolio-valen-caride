@@ -1,64 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="canonical" href="https://www.valencaride.com">
+
+    <meta name="description" content="Welcome to the cinematic journey of Valentin Caride, a dedicated filmmaker and director. From thought-provoking independent shorts to dynamic commercial projects, Valentin brings compelling stories to life on screen with a keen eye for detail and a love for cinematic storytelling. Join him as he embarks on an unforgettable adventure through the magic of film.">
+    
+    <meta property="og:title" content="Valen Caride">
+    <meta property="og:description" content="Welcome to the cinematic journey of Valentin Caride, a dedicated filmmaker and director. From thought-provoking independent shorts to dynamic commercial projects, Valentin brings compelling stories to life on screen with a keen eye for detail and a love for cinematic storytelling. Join him as he embarks on an unforgettable adventure through the magic of film.">
+    <meta property="og:image" content="https://i.vimeocdn.com/video/1447995171-7102ed407240bcc7e64b3500b5a93d8ce2fd9d64033c1d766507db738de3a850-d?mw=960&mh=540">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Valen Caride">
+    <meta name="twitter:description" content="Welcome to the cinematic journey of Valentin Caride, a dedicated filmmaker and director. From thought-provoking independent shorts to dynamic commercial projects, Valentin brings compelling stories to life on screen with a keen eye for detail and a love for cinematic storytelling. Join him as he embarks on an unforgettable adventure through the magic of film.">
+    <meta name="twitter:image" content="https://i.vimeocdn.com/video/1447995171-7102ed407240bcc7e64b3500b5a93d8ce2fd9d64033c1d766507db738de3a850-d?mw=960&mh=540">
+    
     <title>Landing Page</title>
+    
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-    <style>
-        /* Estilos para el loader */
-        .loader-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 8); /* Fondo negro semitransparente */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .loader {
-            border: 8px solid #fff; /* Borde del loader blanco */
-            border-top: 8px solid #3498db; /* Borde superior azul */
-            border-radius: 50%; /* Forma circular */
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite; /* Animación de giro */
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Oculta el loader cuando el video y el script se hayan cargado */
-        .loaded .loader-container {
-            display: none;
-        }
-
-        /* Asegura que el video sea visible cuando se elimine la clase loaded */
-        .loaded video {
-            display: block;
-        }
-    </style>
 </head>
-
 <body>
-    <!-- Loader -->
     <div class="loader-container" id="loader">
         <div class="loader"></div>
     </div>
-
     <main id="principal" class="loaded">
         <div class="intro">
             <h1>VALEN CARIDE</h1>
-            <p>Director</p>
+            <p>Director Freelancer</p>
             <a href="/src/inicio/inicio.html">EXPLORE</a>
         </div>
         <video autoplay muted loop playsinline id="backgroundVideo">
@@ -66,16 +38,6 @@
         </video>
         <div class="capa"></div>
     </main> 
-
-    <!-- <script>
-        // Espera 5 segundos antes de mostrar el video
-        setTimeout(function() {
-            var loader = document.getElementById('loader');
-            var principal = document.getElementById('principal');
-            loader.style.display = 'none';
-            principal.classList.add('loaded');
-        }, 5000);
-    </script> -->
 </body>
 <script src="/index.js"></script>
 </html>

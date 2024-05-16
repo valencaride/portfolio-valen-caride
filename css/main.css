@@ -32,14 +32,15 @@ body {
 /*******************************************************************/
 
 .intro {
-    position: fixed; /* Establecer la posición fija */
-    top: 10px; /* Ajustar la distancia desde la parte superior de la ventana del navegador */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translateX(-50%); /* Centrar horizontalmente */
     text-align: center; /* Alinear el texto al centro */
-    color: #F8EFEF; /* Mantener el color del texto */
+    color: #F8EFEF; /* Color del texto */
     z-index: 2; /* Asegurar que esté por encima de otros elementos */
+    position: absolute; /* Establecer posición absoluta */
+    top: 40%; /* Colocar en la mitad superior del padre */
+    left: 50%; /* Colocar en la mitad izquierda del padre */
+    transform: translate(-50%, -50%); /* Centrar horizontal y verticalmente */
 }
+
 
 .intro h1 {
    font-size: 2.5rem; /* Tamaño del encabezado */
@@ -99,3 +100,40 @@ video {
     mix-blend-mode: overlay;
     z-index: -1; /* Ensure it's behind other content */
 }
+    /* Estilos para el loader */
+    .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 8); /* Fondo negro semitransparente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .loader {
+        border: 8px solid #fff; /* Borde del loader blanco */
+        border-top: 8px solid #3498db; /* Borde superior azul */
+        border-radius: 50%; /* Forma circular */
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite; /* Animación de giro */
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+        /* Oculta el loader cuando el video y el script se hayan cargado */
+        .loaded .loader-container {
+            display: none;
+        }
+
+        /* Asegura que el video sea visible cuando se elimine la clase loaded */
+        .loaded video {
+            display: block;
+        }
