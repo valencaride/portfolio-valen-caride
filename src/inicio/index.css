@@ -11,17 +11,10 @@ body {
     gap: 0.8em;
 }
 
-.no-underline a {
-    text-decoration: none;
-    /* Quita el subrayado */
-}
-
 .item {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .overlay {
     position: absolute;
@@ -34,17 +27,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Color del fondo semi-transparente */
     color: white;
     opacity: 0;
-    /* Oculta el overlay inicialmente */
     transition: opacity 0.3s ease;
-    /* Transición suave para mostrar el overlay */
 }
 
 .item:hover .overlay {
     opacity: 1;
-    /* Muestra el overlay al pasar el ratón sobre el elemento */
 }
 
 .overlay h2 {
@@ -53,14 +42,13 @@ body {
     font-weight: bold;
 }
 
-
-
 .overlay button {
     position: absolute;
     bottom: 0.5rem;
     left: 0.5rem;
-    padding: 1rem;
-    background-color: #ffffff00;
+    padding: 0.5rem;
+    background-color: transparent;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
