@@ -22,14 +22,23 @@ body{
     font-size: medium;
     font-weight: bold;
 }
-
 .card {
-    cursor: pointer;
-    position: relative;
+    border: 2px solid #424141; /* Cambia el color a tu preferencia */
 }
 
 .btn-view-more {
     position: absolute;
     bottom: 0.5rem;
     left: 0.5rem;
+}
+.desktop-container {
+    height: 100vh;
+    width: 100%; /* Puedes ajustar este valor según tus necesidades */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 2%;
 }
