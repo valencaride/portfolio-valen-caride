@@ -31,14 +31,23 @@ body{
     bottom: 0.5rem;
     left: 0.5rem;
 }
-.desktop-container {
-    height: 100vh;
-    width: 100%; /* Puedes ajustar este valor según tus necesidades */
-}
+@media screen and (min-width: 768px) {
+    .desktop-container {
+        height: 100vh;
+        width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin-bottom: 2%;
+}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
 }
