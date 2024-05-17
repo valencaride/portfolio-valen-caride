@@ -27,6 +27,9 @@ iframe {
   height: 300px; /* Establece una altura fija para el div de la descripción */
   overflow-y: auto; /* Habilita el scroll vertical cuando el contenido exceda la altura */
 } 
+.description h1{
+  font-size: xx-large;
+}
 
 
 @media (max-width: 800px) {

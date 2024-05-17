@@ -59,12 +59,12 @@ body {
 .intro a {
     display: block;
     width: fit-content;
-    padding: 1.2rem 4.5rem;
+    padding: 0.7rem 3.3rem;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     letter-spacing: 0.2rem;
     text-decoration: none;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     transition: all 0.3s;
     border-color: #F8EFEF;
     position: fixed;
