@@ -23,7 +23,7 @@ body{
     font-weight: bold;
 }
 .card {
-    border: 2px solid #424141; /* Cambia el color a tu preferencia */
+    border: none; /* Cambia el color a tu preferencia */
 }
 
 .btn-view-more {
