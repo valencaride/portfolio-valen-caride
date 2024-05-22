@@ -17,18 +17,8 @@
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.card-img-top');
-
-    images.forEach(image => {
-        image.addEventListener('click', function() {
-            toggleOverlay(image.closest('.card'));
-        });
-    });
-});
-
-function toggleOverlay(card) {
-    const overlay = card.querySelector('.card-overlay');
+function toggleOverlay(image) {
+    const overlay = image.parentNode.querySelector('.card-overlay');
     if (overlay.style.opacity === '1') {
         overlay.style.opacity = '0';
     } else {
