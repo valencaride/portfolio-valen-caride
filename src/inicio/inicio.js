@@ -18,11 +18,11 @@
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.card');
+    const images = document.querySelectorAll('.card-img-top');
 
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            toggleOverlay(card);
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            toggleOverlay(image.closest('.card'));
         });
     });
 });

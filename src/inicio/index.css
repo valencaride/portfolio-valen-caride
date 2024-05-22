@@ -48,8 +48,14 @@ body {
 }
 
 .container {
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 3%;
+}
+@media (min-width: 1200px) {
+    .row.justify-content-lg-center {
+    
+    }
 }
