@@ -1,29 +1,18 @@
- // Seleccionar el elemento con la clase 'logo'
- var logo = document.getElementById('logo');
-
- // Agregar un event listener para el evento 'click'
- logo.addEventListener('click', function() {
-     // Redireccionar a la página de inicio
-     window.location.href = "/index.html";
- });
-
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
         card.addEventListener('click', function() {
-            toggleOverlay(card);
+            toggleOverlay(this); // Pasamos 'this' como argumento
         });
     });
 });
-function toggleOverlay(image) {
-    const overlay = image.parentNode.querySelector('.card-overlay');
-    if (overlay.style.opacity === '1') {
-        overlay.style.opacity = '0';
+
+function toggleOverlay(card) {
+    const overlay = card.querySelector('.card-overlay'); // Seleccionar el overlay dentro de la tarjeta
+    if (overlay.style.opacity === '1' || overlay.style.opacity === '') { // Verificar si el overlay está visible
+        overlay.style.opacity = '0'; // Ocultar el overlay
     } else {
-        overlay.style.opacity = '1';
+        overlay.style.opacity = '1'; // Mostrar el overlay
     }
 }
-
-
-    
