@@ -16,7 +16,6 @@
         });
     });
 });
-
 function toggleOverlay(image) {
     const overlay = image.parentNode.querySelector('.card-overlay');
     if (overlay.style.opacity === '1') {
