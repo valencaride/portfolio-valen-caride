@@ -8,7 +8,7 @@
  });
 
  function toggleOverlay(card) {
-    const overlay = card.querySelector('.card-overlay');
+    const overlay = card.querySelector('.proyecto');
     if (overlay.style.opacity === '1') {
         overlay.style.opacity = '0';
     } else {
