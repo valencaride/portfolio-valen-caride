@@ -17,6 +17,16 @@
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            toggleOverlay(card);
+        });
+    });
+});
+
 function toggleOverlay(card) {
     const overlay = card.querySelector('.card-overlay');
     if (overlay.style.opacity === '1') {
