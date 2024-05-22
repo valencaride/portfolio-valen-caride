@@ -7,5 +7,13 @@
      window.location.href = "/index.html";
  });
 
-        
+ function toggleOverlay(card) {
+    const overlay = card.querySelector('.card-overlay');
+    if (overlay.style.opacity === '1') {
+        overlay.style.opacity = '0';
+    } else {
+        overlay.style.opacity = '1';
+    }
+}
+
     
