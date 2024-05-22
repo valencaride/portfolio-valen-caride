@@ -7,13 +7,24 @@
      window.location.href = "/index.html";
  });
 
- function toggleOverlay(card) {
-    const overlay = card.querySelector('.proyecto');
+ document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            toggleOverlay(card);
+        });
+    });
+});
+
+function toggleOverlay(card) {
+    const overlay = card.querySelector('.card-overlay');
     if (overlay.style.opacity === '1') {
         overlay.style.opacity = '0';
     } else {
         overlay.style.opacity = '1';
     }
 }
+
 
     
