@@ -55,3 +55,27 @@ body {
     margin-bottom: 3%;
 }
 
+.footer {
+    background-color: rgb(18, 17, 17) ;
+    padding: 20px 0; /* Añade algo de espacio alrededor del footer */
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+  }
+  
+  .icon {
+    margin: 0 10px; /* Espacio entre iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    color: white; /* Color de los iconos */
+  }
+  
+  .instagram-icon:hover,
+  .whatsapp-icon:hover,
+  .gmail-icon:hover {
+    color: #2a2a2a; /* Cambia a un color diferente en hover (ajusta según tu preferencia) */
+  }
+
