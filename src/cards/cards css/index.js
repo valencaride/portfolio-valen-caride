@@ -1,45 +1,43 @@
-var menu = document.querySelector("#menu");
-		menu.onclick = function(){
-			var btn = document.querySelector(".side-menu");
-			btn.classList.toggle("hide");
-		};
 
 
-		var slideIndex = 1;
-		showDivs(slideIndex);
-		function plusDivs(n) {
-		showDivs(slideIndex += n);
-		}
-		function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("slides");
-		if (n > x.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = x.length}
-		for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-		}
-		x[slideIndex-1].style.display = "block";
-		}
+window.onload = function () {
+	var descripcion = document.getElementById("descripcion");
+	var textoCompleto = descripcion.innerText;
+	descripcion.setAttribute("data-texto-completo", textoCompleto);
+	descripcion.innerText = textoCompleto.substring(0, textoCompleto.length / 2) + "...";
+}
 
-		function verMas() {
-            var descripcion = document.getElementById("descripcion");
-            var boton = document.getElementById("ver-mas-btn");
-            var textoCompleto = descripcion.getAttribute("data-texto-completo");
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionar la flecha de desplazamiento
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    const imagesSection = document.querySelector('.container.mb-2');
 
-            if (descripcion.classList.contains("mostrar")) {
-                descripcion.innerText = textoCompleto.substring(0, textoCompleto.length / 2) + "...";
-                descripcion.classList.remove("mostrar");
-                boton.innerText = "Ver más";
-            } else {
-                descripcion.innerText = textoCompleto;
-                descripcion.classList.add("mostrar");
-                boton.innerText = "Ver menos";
-            }
+    // Agregar un event listener para el evento 'click'
+    scrollToTopButton.addEventListener('click', function() {
+        // Verificar si estamos en la parte superior o inferior de la página
+        if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+            // Desplazarse suavemente al inicio de la página
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            // Desplazarse suavemente a la sección de imágenes
+            imagesSection.scrollIntoView({ behavior: 'smooth' });
         }
+    });
 
-        window.onload = function() {
-            var descripcion = document.getElementById("descripcion");
-            var textoCompleto = descripcion.innerText;
-            descripcion.setAttribute("data-texto-completo", textoCompleto);
-            descripcion.innerText = textoCompleto.substring(0, textoCompleto.length / 2) + "...";
+    // Agregar un event listener para detectar el desplazamiento de la página
+    window.addEventListener('scroll', function() {
+        // Obtener la posición actual de desplazamiento vertical
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Cambiar la apariencia de la flecha dependiendo de la posición del desplazamiento
+        if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+            scrollToTopButton.classList.add('upwards');
+        } else {
+            scrollToTopButton.classList.remove('upwards');
         }
+    });
+});
+

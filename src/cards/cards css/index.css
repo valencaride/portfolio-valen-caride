@@ -46,3 +46,23 @@ iframe {
     margin-top: 4%;
   }
 }
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-arrow i {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.scroll-arrow.upwards i {
+  transform: rotate(180deg);
+}
