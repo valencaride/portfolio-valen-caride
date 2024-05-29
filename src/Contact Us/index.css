@@ -1,18 +1,28 @@
 body {
   background-color: #000000;
+  
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 70vh; /* Puedes ajustar esto según tus necesidades */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
 .icon {
   margin: 0 20px;
   color: #fff;
   font-size: 40px;
+  transition: color 0.3s; /* Transición suave en el cambio de color */
+}
+
+.icon:hover {
+  color: #ffcc00; /* Ejemplo de color al pasar el ratón */
+}
+i :active{
+  color: #443e3e;
 }
 
 @media (max-width: 768px) {

@@ -16,6 +16,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    pointer-events: none; /* Permite hacer clic en la tarjeta y no solo en el overlay */
+}
+
+.card.visible .card-overlay {
+    opacity: 1;
+    pointer-events: auto; /* Activa los eventos del overlay cuando es visible */
 }
 
 .card-overlay h2 {
