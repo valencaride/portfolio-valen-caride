@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,48 +8,42 @@
   <title>About</title>
   <link rel="icon" href="/images/VC-Photoroom.png-Photoroom.png" type="image/x-icon">
   <link rel="stylesheet" href="/src/about Us/style.css" />
-  <link rel="stylesheet" href="/src/about Us/mediaqueries.css" />
   <link rel="stylesheet" href="/src/navbar/navbar.css">
-  <link rel="stylesheet" href="/src/footer/footer.css" >
   <script src="/src/navbar/navbar.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
-<body>
+<body class="body">
   <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <label class="logo"><a href="/src/inicio/inicio.html">VALEN CARIDE</a>
-    </label>
+    <label class="logo">
+      <a href="/src/inicio/inicio.html">
+        <i class="fas fa-arrow-left left-arrow-icon"></i>
+      </a>    
+  </label>
     <ul>
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/src/inicio/inicio.html">Films</a></li>
-      <li><a class="active" href="#">About</a></li>
       <li><a href="/src/Contact Us/index.html">Contact</a></li>
     </ul>
   </nav>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="about-details-container">
-        <div class="text-container">
-          <p class="text-about">
-            Hello, I'm Valentin, a passionate filmmaker and director dedicated to bringing compelling stories to life on
-            screen. With a keen eye for detail and a love for cinematic storytelling, I strive to create captivating
-            experiences that resonate with audiences worldwide. From thought-provoking independent shorts to dynamic
-            commercial projects, my diverse portfolio reflects my commitment to pushing creative boundaries and
-            exploring the human experience through the lens of a camera. Welcome to my cinematic journey – where every
-            frame tells a story and every moment is an opportunity to inspire. Join me as we embark on an unforgettable
-            adventure through the magic of film.<br>
-            <span class="name-about">Valentin</span>
-          </p>
+  <div class="container mt-5">
+    <div class="row">
+        <!-- Columna izquierda con la imagen -->
+        <div class="col-md-4 d-flex justify-content-center">
+            <img src="https://i.pinimg.com/736x/0c/2c/af/0c2caf0aacc3c074a3c6ed56232bfbd9.jpg" alt="Mi Imagen" class="img-fluid rounded-circle small-img">
         </div>
-      </div>
+        <!-- Columna derecha con el About -->
+        <div class="col-md-8">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+                Young director and filmmaker born in Buenos Aires, Argentina.
+                With over 6 years of experience in the industry, I have worked on projects around the world collaborating with
+                renowned brands such as Adidas, Reebok, and Kia, as well as various artists.
+            </p>
+        </div>
     </div>
-  </section>
-<script src="/src/about Us/script.js"></script>
+</div>
 </body>
-
 </html>
