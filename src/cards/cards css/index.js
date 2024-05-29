@@ -41,3 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuCheckbox = document.getElementById('check'); // Obtener el checkbox del menú
+    const scrollToTop = document.getElementById('scrollToTop'); // Obtener el botón de la flecha
+
+    // Agregar evento de cambio al checkbox del menú
+    menuCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            scrollToTop.style.display = 'none'; // Ocultar la flecha cuando el menú está desplegado
+        } else {
+            scrollToTop.style.display = 'block'; // Mostrar la flecha cuando el menú se cierra
+        }
+    });
+});
+
