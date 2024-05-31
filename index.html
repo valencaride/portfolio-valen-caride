@@ -101,14 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var loader = document.getElementById('loader');
     var video = document.getElementById('backgroundVideo');
 
-    video.onloadeddata = function() {
-        loader.style.display = 'none'; // Ocultar el loader cuando el video esté cargado
-        video.style.display = 'block'; // Mostrar el video cuando esté cargado
+    video.oncanplay = function() {
+        loader.style.display = 'none'; // Ocultar el loader cuando el video esté listo para reproducirse
+        video.style.display = 'block'; // Mostrar el video cuando esté listo
+        video.play(); // Iniciar la reproducción del video
     };
-
-    video.onplay = function() {
-        loader.style.display = 'none';
-     }
-})
+});
 </script>
 </html>
