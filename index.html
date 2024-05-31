@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- <div class="loader-container" id="loader">
+    <div class="loader-container" id="loader">
         <div class="loader"></div>
-    </div>  -->
+    </div> 
     <main id="principal" class="loaded">
         <div class="intro">
             <h1>VALEN CARIDE</h1>
@@ -97,18 +97,19 @@
     </script>        
 </body>
 <script>
-// Espera 5 segundos antes de mostrar el video
-setTimeout(function() {
-    var loader = document.getElementById('loader');
-    var principal = document.getElementById('principal');
-    loader.style.display = 'none';
-    principal.classList.add('loaded');
-}, 3000);
-
-// autoplay del video
 document.addEventListener('DOMContentLoaded', function() {
+    var loader = document.getElementById('loader');
     var video = document.getElementById('backgroundVideo');
-    video.play();
-});
+
+    video.onloadeddata = function() {
+        loader.style.display = 'none'; // Ocultar el loader cuando el video esté cargado
+        video.style.display = 'block'; // Mostrar el video cuando esté cargado
+    };
+
+    video.onplay = function() {
+        loader.style.display = 'none';
+     }
+})
+      // Ocultar el loader cuando el video comience a rep
 </script>
 </html>
