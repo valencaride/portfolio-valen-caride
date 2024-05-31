@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="loader-container" id="loader">
+    <!-- <div class="loader-container" id="loader">
         <div class="loader"></div>
-    </div> 
+    </div>  -->
     <main id="principal" class="loaded">
         <div class="intro">
             <h1>VALEN CARIDE</h1>
@@ -41,38 +41,38 @@
         <div class="capa"></div>
     </main> 
     <div class="footer-icons">
-            <div class="icon">
-                <a href="https://www.instagram.com/valencaride/" target="_blank">
-                    <i class="fab fa-instagram instagram-icon"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a href="https://api.whatsapp.com/send?phone=541136090308" target="_blank">
-                    <i class="fab fa-whatsapp whatsapp-icon"></i>
-                </a>
-            </div>
-            <div class="icon">
-                <a id="emailLink">
-                    <i class="fas fa-envelope gmail-icon"></i>
-                </a>
-                
-                  <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                      var emailLink = document.getElementById("emailLink");
-                
-                      function isMobileDevice() {
-                        return /Mobi|Android/i.test(navigator.userAgent);
-                      }
-                
-                      if (isMobileDevice()) {
-                        emailLink.href = "mailto:Valenfcaride@gmail.com";
-                      } else {
-                        emailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=Valenfcaride@gmail.com";
-                        emailLink.target = "_blank";
-                      }
-                    });
-                  </script>
-            </div>
+      <div class="icon">
+          <a href="https://www.instagram.com/valencaride/" target="_blank">
+              <i class="fab fa-instagram instagram-icon"></i>
+          </a>
+      </div>
+      <div class="icon">
+          <a href="https://api.whatsapp.com/send?phone=541136090308" target="_blank">
+              <i class="fab fa-whatsapp whatsapp-icon"></i>
+          </a>
+      </div>
+      <div class="icon">
+          <a id="emailLink">
+              <i class="fas fa-envelope gmail-icon"></i>
+          </a>
+          
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                var emailLink = document.getElementById("emailLink");
+          
+                function isMobileDevice() {
+                  return /Mobi|Android/i.test(navigator.userAgent);
+                }
+          
+                if (isMobileDevice()) {
+                  emailLink.href = "mailto:Valenfcaride@gmail.com";
+                } else {
+                  emailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=Valenfcaride@gmail.com";
+                  emailLink.target = "_blank";
+                }
+              });
+            </script>
+      </div>
     </div>
     </div>
     <script type="application/ld+json">
@@ -96,5 +96,19 @@
         }
     </script>        
 </body>
-<script src="/index.js"></script>
+<script>
+// Espera 5 segundos antes de mostrar el video
+setTimeout(function() {
+    var loader = document.getElementById('loader');
+    var principal = document.getElementById('principal');
+    loader.style.display = 'none';
+    principal.classList.add('loaded');
+}, 3000);
+
+// autoplay del video
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('backgroundVideo');
+    video.play();
+});
+</script>
 </html>

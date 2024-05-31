@@ -31,10 +31,9 @@ setTimeout(function() {
     principal.classList.add('loaded');
 }, 3000);
 
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.getElementById('backgroundVideo');
-        video.play();
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('backgroundVideo');
+    video.play();
+});
 
 
