@@ -29,7 +29,7 @@ setTimeout(function() {
     var principal = document.getElementById('principal');
     loader.style.display = 'none';
     principal.classList.add('loaded');
-}, 2500);
+}, 3000);
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     var video = document.getElementById('backgroundVideo');
