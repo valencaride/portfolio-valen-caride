@@ -50,9 +50,9 @@ body {
 
 .intro p {
     font-size: 0.8rem; /* Tamaño del párrafo */
-    letter-spacing: 0.25rem; /* Espaciado entre letras */
+    /* letter-spacing: 0.2rem; Espaciado entre letras */
     line-height: 1.3rem; /* Altura de línea */
-    margin-bottom: 20px; /* Espaciado entre el párrafo y el enlace */
+    /* margin-bottom: 20px; Espaciado entre el párrafo y el enlace */
 }
 
 
@@ -137,3 +137,28 @@ video {
         .loaded video {
             display: block;
         }
+
+.footer-icons{
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -4%;
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s;   
+}
+.footer-icons i{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .intro a {
+        margin-top: -15%;       
+    }
+    .footer-icons{
+        margin-top: -11%;
+    }
+}
