@@ -38,9 +38,29 @@
             </a>
         </div>
         <div class="icon">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Valenfcaride@gmail.com target="_blank">
+            <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Valenfcaride@gmail.com target="_blank">
+                <i class="fas fa-envelope gmail-icon"></i>
+            </a> -->
+            <a id="emailLink">
                 <i class="fas fa-envelope gmail-icon"></i>
             </a>
+            
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  var emailLink = document.getElementById("emailLink");
+            
+                  function isMobileDevice() {
+                    return /Mobi|Android/i.test(navigator.userAgent);
+                  }
+            
+                  if (isMobileDevice()) {
+                    emailLink.href = "mailto:Valenfcaride@gmail.com";
+                  } else {
+                    emailLink.href = "https://mail.google.com/mail/?view=cm&fs=1&to=Valenfcaride@gmail.com";
+                    emailLink.target = "_blank";
+                  }
+                });
+              </script>
         </div>
     </div>
 </body>
